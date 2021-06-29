@@ -11,3 +11,4 @@
 <van-cell is-link title="自定义swiper" link-type="navigateTo" url="/pages/menuFixed/menuFixed" />
 <van-cell is-link title="tap分类滑动swiper效果" link-type="navigateTo" url="/pages/menuFixed/menuFixed" />
 <van-cell is-link title="状态栏机型判断" link-type="navigateTo" url="/pages/menuFixed/menuFixed" />
+<van-cell is-link title="表单form校验" link-type="navigateTo" url="/pages/menuFixed/menuFixed" />
