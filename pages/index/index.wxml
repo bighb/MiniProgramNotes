@@ -1,0 +1,43 @@
+<view class="container">
+  <view class="header">
+    <image class="plus" src="../../assets/plus.png" />
+    <input class="new-todo" value="{{ input }}" placeholder="Anything here..." auto-focus bindinput="inputChangeHandle" bindconfirm="addTodoHandle" />
+  </view>
+  <block wx:if="{{ todos.length }}">
+    <view class="todos">
+      <!-- List items should get the class `completed` when marked as completed -->
+      <view class="item{{ item.completed ? ' completed' : '' }}" wx:for="{{ todos }}" wx:key="{{ index }}" bindtap="toggleTodoHandle" data-index="{{ index }}">
+        <!-- completed: success, todo: circle -->
+        <icon class="checkbox" type="{{ item.completed ? 'success' : 'circle' }}" />
+        <text class="name">{{ item.name }}</text>
+        <icon class="remove" type="clear" size="16" catchtap="removeTodoHandle" data-index="{{ index }}" />
+      </view>
+    </view>
+    <view class="footer">
+      <text class="btn" bindtap="toggleAllHandle">Toggle all</text>
+      <text wx:if="{{ leftCount }}">{{ leftCount }} {{ leftCount === 1 ? 'item' : 'items' }} left</text>
+      <text class="btn" wx:if="{{ todos.length > leftCount }}" bindtap="clearCompletedHandle">Clear completed</text>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="empty">
+      <text class="title">Congratulations!</text>
+      <text class="content">There's no more work left.</text>
+    </view>
+  </block>
+  <button open-type="share">分享权益卡</button>
+  <button bind:tap="open">滚动穿透</button>
+</view>
+<view wx:for="{{40}}" wx:key="index">我是创造滚动空间{{index}}</view>
+<view class="rootClass" catchtouchmove="move" wx:if="{{isOpen}}">
+  <!-- 遮罩 -->
+  <view class="layout__overlay" catchtap="close">
+    <view class="layout__container">
+      <view class="layout__body">
+        <scroll-view scroll-y="true" style="height: 280px;">
+          <view wx:for="{{30}}" wx:key="index">我是滚动内容{{index}}</view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>
