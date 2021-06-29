@@ -1,10 +1,9 @@
-// pages/components/webView/webView.js
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    url: "",
+    url: "https://mp.weixin.qq.com/s/abvTeyG6fzTfelExyjkeBg",
   },
 
   /**

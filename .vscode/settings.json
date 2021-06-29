@@ -1,3 +1,6 @@
 {
-    "editor.defaultFormatter": "cnyballk.wxml-vscode"
+    "editor.defaultFormatter": "cnyballk.wxml-vscode",
+    "[wxml]": {
+        "editor.defaultFormatter": "qiu8310.minapp-vscode"
+    }
 }

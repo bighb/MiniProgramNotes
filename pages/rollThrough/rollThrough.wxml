@@ -1,0 +1,14 @@
+<page-meta page-style="overflow: {{visible ? 'hidden' : 'visible'}}" />
+<van-cell title="展示弹出层" is-link bind:click="showPopup" />
+<view wx:for="{{list}}" wx:key="index">
+    <h1>分割线{{index}}</h1>
+    <view>{{item.name}}</view>
+</view>
+<van-popup show="{{ show }}" bind:close="onClose">
+    <view class="box">
+        <view wx:for="{{100}}" wx:key="index">
+            <h1>分割线{{index}}</h1>
+            <view>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</view>
+        </view>
+    </view>
+</van-popup>

@@ -1,14 +1,16 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/detail/detail",
-    "pages/webview/webview"
+    "pages/webview/webview",
+    "pages/rollThrough/rollThrough",
+    "pages/my/my",
+    "pages/menuFixed/menuFixed",
+    "pages/qrcode/qrcode"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "TODOS",
+    "navigationBarTitleText": "小程序笔记本",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -19,23 +21,18 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "todos",
+        "text": "首页",
         "iconPath": "assets/todos.png",
         "selectedIconPath": "assets/todos-active.png"
       },
       {
-        "pagePath": "pages/webview/webview",
-        "text": "web",
+        "pagePath": "pages/my/my",
+        "text": "我的",
         "iconPath": "assets/todos.png",
         "selectedIconPath": "assets/todos-active.png"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "logs",
-        "iconPath": "assets/logs.png",
-        "selectedIconPath": "assets/logs-active.png"
       }
     ]
   },
+  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
