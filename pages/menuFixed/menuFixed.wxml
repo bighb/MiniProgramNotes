@@ -1,2 +1,15 @@
-<!-- pages/menuFixed/menuFixed.wxml -->
-<text>pages/menuFixed/menuFixed.wxml</text>
+<view class="box">
+    <view class="top">
+        <h1>我是顶部内容</h1>
+        <image src="https://zws.im/󠁺󠁿󠁺󠁿󠁨󠁰󠁬" />
+        <view wx:for="{{10}}" wx:key="index">顶部内容{{index}}</view>
+    </view>
+    <view class="middle">
+        <h1>我是中部内容</h1>
+        <view wx:for="{{10}}" wx:key="index">中部内容{{index}}</view>
+    </view>
+    <view class="bottom">
+        <h1>我是底部内容</h1>
+        <view wx:for="{{10}}" wx:key="index">底部内容{{index}}</view>
+    </view>
+</view>
