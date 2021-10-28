@@ -1,15 +1,16 @@
 <view class="box">
-    <view class="top">
-        <h1>我是顶部内容</h1>
-        <image src="https://zws.im/󠁺󠁿󠁺󠁿󠁨󠁰󠁬" />
-        <view wx:for="{{10}}" wx:key="index">顶部内容{{index}}</view>
+    <view>
+        <view>我是顶部内容</view>
+        <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />
     </view>
     <view class="middle">
-        <h1>我是中部内容</h1>
+        <view class="title top">我是中部吸顶内容</view>
+        <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />
         <view wx:for="{{10}}" wx:key="index">中部内容{{index}}</view>
     </view>
     <view class="bottom">
-        <h1>我是底部内容</h1>
+        <view>我是底部内容</view>
+        <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />
         <view wx:for="{{10}}" wx:key="index">底部内容{{index}}</view>
     </view>
 </view>

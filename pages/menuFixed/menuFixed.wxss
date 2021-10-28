@@ -1,1 +1,10 @@
 /* pages/menuFixed/menuFixed.wxss */
+.top {
+  position: sticky;
+  top: 0;
+}
+.title {
+  font-size: 36rpx;
+  color: blueviolet;
+  background-color: blanchedalmond;
+}

@@ -5,7 +5,8 @@
     "pages/rollThrough/rollThrough",
     "pages/my/my",
     "pages/menuFixed/menuFixed",
-    "pages/qrcode/qrcode"
+    "pages/qrcode/qrcode",
+    "pages/updateCheck/updateCheck"
   ],
   "window": {
     "backgroundTextStyle": "light",

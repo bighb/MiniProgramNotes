@@ -1,0 +1,5 @@
+/* pages/updateCheck/updateCheck.wxss */
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+}

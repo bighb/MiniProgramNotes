@@ -1,1 +1,10 @@
 /* pages/qrcode/qrcode.wxss */
+.title {
+  font-size: 36rpx;
+}
+.card {
+  width: 100%;
+  min-height: 40rpx;
+  background-color: #f6f8fa;
+  padding: 20rpx;
+}
