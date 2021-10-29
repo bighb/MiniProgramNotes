@@ -1,5 +1,45 @@
+// 需要显示home的场景值
+const showHomeButtonScenes = [
+  1007, // 单聊分享卡片
+  1008, // 群聊分享卡片
+  1011,
+  1012,
+  1013,
+  1020, // 公众号 profile 页相关小程序列表
+  1035, // 公众号自定义菜单
+  1036,
+  1043, // 公众号模板消息
+  1047,
+  1048,
+  1049,
+  1058, // 公众号文章
+  1065, // url
+  1067, // 公众号文章广告
+  1082, // 公众号会话下发的文字链
+  1091, // 公众号文章商品卡片
+  1167, // 开放标签
+  1102, //公众号 profile 页服务预览
+];
 App({
+  /**
+   * 实时监测当前页面路由的栈，判断自定义导航栏的home back图标显示
+   */
+  onShow: async function (options) {
+    const { scene } = options;
+    const pages = getCurrentPages();
+    const index = pages.findIndex((page) => page.route === "pages/home/home");
+    if (index === -1 && showHomeButtonScenes.includes(scene)) {
+      // 表示当前路由没有home
+      this.globalData.navShowHome = true;
+    } else {
+      // 表示当前路由没有home
+      this.globalData.navShowHome = false;
+    }
+  },
+
   onLaunch: async function () {
+    // 机型判断
+    this.setNavSize();
     this.autoUpdate();
   },
 
@@ -70,5 +110,42 @@ App({
         content: "新版本已经上线啦~，请您删除当前小程序，重新搜索打开哟~",
       });
     });
+  },
+  //   机型判断
+  setNavSize() {
+    var that = this,
+      sysinfo = wx.getSystemInfoSync(),
+      statusHeight = sysinfo.statusBarHeight,
+      isiOS = sysinfo.system.indexOf("iOS") > -1,
+      navHeight,
+      // 判断是否为iPhoneX
+      screenHeight = sysinfo.screenHeight,
+      bottom = sysinfo.safeArea.bottom,
+      isIPhoneX = screenHeight !== bottom;
+    if (!isiOS) {
+      navHeight = 48;
+    } else {
+      navHeight = 44;
+      // 是ios再判断
+      if (isIPhoneX) {
+        this.globalData.bottomSafeHeight = screenHeight - bottom;
+      } else {
+        this.globalData.bottomSafeHeight = 0;
+      }
+    }
+    this.globalData.navHeight = navHeight;
+    this.globalData.status = statusHeight;
+    this.globalData.toTop = navHeight + statusHeight;
+    this.globalData.isIPhoneX = isIPhoneX;
+  },
+  globalData: {
+    userInfo: null,
+    navShowHome: false,
+    bgImg: "", // 顶部背景图片
+    navHeight: "",
+    status: "",
+    toTop: "",
+    bottomSafeHeight: 0, // 底部安全距离
+    isIPhoneX: false,
   },
 });

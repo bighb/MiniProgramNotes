@@ -1,13 +1,16 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/home/home",
     "pages/webview/webview",
     "pages/rollThrough/rollThrough",
     "pages/my/my",
     "pages/menuFixed/menuFixed",
     "pages/qrcode/qrcode",
     "pages/updateCheck/updateCheck",
-    "pages/loginQuietly/loginQuietly"
+    "pages/loginQuietly/loginQuietly",
+    "pages/navbar/navbar",
+    "pages/echartsLine/echartsLine",
+    "pages/bigNumber/bigNumber"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,7 +25,7 @@
     "borderStyle": "white",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/home/home",
         "text": "首页",
         "iconPath": "assets/todos.png",
         "selectedIconPath": "assets/todos-active.png"

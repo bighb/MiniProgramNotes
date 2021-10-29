@@ -1,0 +1,28 @@
+<view class="nav" style="height: {{status + navHeight}}px; position:fixed;">
+    <view class="status" style="height: {{status}}px;{{containerStyle}}"></view>
+    <view class="navbar" style="height:{{navHeight}}px;{{containerStyle}}">
+        <view class="back-warp" wx:if="{{!isTabBar}}">
+            <view wx:if="{{showBack &&  showHome}}">
+                <view class="back_home">
+                    <image class="back_img" bindtap="back" src="{{backAndHome.backimg}}"></image>
+                    <image class="home_img" bindtap="home" src="{{backAndHome.homeimg}}"></image>
+                </view>
+            </view>
+            <view wx:else>
+                <view class="back-icon" wx:if="{{showBack}}" bindtap="back">
+                    <image class="back-icon-img" src="{{backIcon}}"></image>
+                </view>
+                <view class="home-icon" wx:if="{{showHome}}" bindtap="home">
+                    <image class="home-icon-img" src="{{homeIcon}}"></image>
+                </view>
+            </view>
+        </view>
+        <view class="nav-icon" wx:if="{{titleImg}}">
+            <image class="nav-icon-img" src="{{titleImg}}" style="{{iconStyle}}"></image>
+        </view>
+        <view class="nav-title" style="text-align:{{titlePosition}};height: {{navHeight}}px;" wx:if="{{titleText && !titleImg}}">
+            <text class="title_ellipsis" style="line-height: {{navHeight}}px; " style="{{textStyle}}">{{ titleText }}</text>
+        </view>
+        <slot></slot>
+    </view>
+</view>

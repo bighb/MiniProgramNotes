@@ -1,0 +1,12 @@
+.title {
+  font-size: 36rpx;
+}
+.subhead {
+  font-size: 30rpx;
+}
+.card {
+  width: 100%;
+  min-height: 40rpx;
+  background-color: #f6f8fa;
+  padding: 20rpx;
+}

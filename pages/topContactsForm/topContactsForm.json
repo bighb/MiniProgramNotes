@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "van-field": "/vant/dist/field/index",
+        "van-checkbox": "/vant/dist/checkbox/index",
+        "navBar": "/components/navBar/navBar"
+    }
+}

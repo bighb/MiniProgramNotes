@@ -1,0 +1,51 @@
+<view class="page-content">
+    <image class="hyhb-bg" src="https://prd-zywx-picture-1302439057.cos.ap-shanghai.myqcloud.com/wx/img/hyhb-bg.png" mode="scaleToFill"></image>
+    <view class="method-1-wrap wrap">
+        <text class="title">活动时间</text>
+        <text class="content">2021年4月8日--2021年9月30日</text>
+    </view>
+    <view class="method-2-wrap wrap">
+        <text class="title">预约方式</text>
+        <text class="content">登录“游湖北”APP/微信小程序，“湖北文旅之声”、***等官方微信公众号，美团、携程、同程、飞猪、驴妈妈、去哪儿等OTA平台，点击“2021与爱同行惠游湖北”专区进入活动主页面预订，也可通过各相关景区自营票务销售渠道预订。</text>
+    </view>
+    <view class="method-3-wrap wrap">
+        <text class="title">活动时间</text>
+        <text class="content">1、全省A级旅游景区对湖北省外游客实行免门票优惠；对湖北省内游客实行门票5折及以下优惠（各景区门票折扣率有所不同），门票优惠政策不叠加享受。
+            2、门票优惠为景区首道大门票，不含景区内二次消费、景区内交通等费用。
+            3、游客须用身份证号码实名预约订票、持本人二代身份证刷机入园；未办理身份证的儿童须出示户口本原件或复印件由景区工作人员输入身份证号码核销入园。湖北省内、外游客通过身份证号码归属地识别。</text>
+    </view>
+    <view class="method-4-wrap wrap part-4">
+        <text class="title">详细规则</text>
+        <view class="content-rules">详细规则详细规则详细规则详细规则详细规则详细规则详细规则详细规则详细规则</view>
+        <view class="more-rules">查看更多</view>
+    </view>
+    <view class="method-5-wrap wrap">
+        <text class="title">注意事项</text>
+        <text class="content">出游前请及时关注了解目的地疫情防控、交通管制、天气变化等情况，提前预订好景区门票；主动遵守疫情防控各项规定。不参与活动的A级景区按原方式购票入园。</text>
+    </view>
+    <view class="map-warp ">
+        <view class="head">
+            <text class="title-info">选择地区</text>
+            <text class="tip">（请选择下方地图选择活动地区）</text>
+        </view>
+        <!-- 地图开始 -->
+        <view class="map">
+            <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
+        </view>
+        <!-- 地图结束 -->
+    </view>
+    <!-- 城市卡片开始 -->
+    <view class="card">
+        <image src="https://prd-zywx-picture-1302439057.cos.ap-shanghai.myqcloud.com/wx/city-banner/420200.jpg" />
+    </view>
+    <!-- 城市卡片结束 -->
+    <view class="city-list">
+        <view class="{{ activate == item.value ? 'activate' : '' }}" data-name="{{item.text}}" data-value="{{item.value}}" wx:for="{{city}}" wx:key="index" bind:tap="changeMapCity">
+            {{item.text}}
+        </view>
+    </view>
+    <view class="method-7-wrap wrap">
+        <text class="title">游客咨询服务</text>
+        <text class="content">游客咨询投诉电话，常见问题解答</text>
+    </view>
+</view>

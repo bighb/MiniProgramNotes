@@ -1,0 +1,114 @@
+.title {
+  font-size: 36rpx;
+}
+.card {
+  width: 100%;
+  min-height: 40rpx;
+  background-color: #f6f8fa;
+  padding: 20rpx;
+}
+
+.field {
+  padding: 0 30rpx;
+  /* margin-top: 10%; */
+}
+
+.field-container {
+  height: 150rpx;
+}
+
+.read {
+  padding: 30rpx;
+}
+
+.aggre-title {
+  font-size: 26rpx;
+  color: #3a3a48;
+}
+
+.aggre-inner {
+  opacity: 0.5;
+  font-size: 24rpx;
+  color: #3a3a48;
+  line-height: 36rpx;
+}
+
+.van-checkbox {
+  align-items: flex-start !important;
+}
+
+.van-cell__title {
+  font-size: 32rpx;
+  color: #38383c;
+  font-weight: 600;
+  line-height: 108rpx;
+}
+
+.van-cell {
+  height: 108rpx;
+  border-bottom: 1rpx solid rgba(204, 204, 214, 0.5);
+  /* line-height: 108rpx; */
+  align-items: center;
+}
+
+.van-cell__value {
+  line-height: 108rpx;
+}
+
+.van-field__input {
+  line-height: 108rpx;
+  font-size: 32rpx;
+}
+
+.error-message {
+  font-size: 24rpx;
+  color: #ff5e4e;
+  text-align: right;
+  margin-top: 10rpx;
+  line-height: 32rpx;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-move {
+  transform: translateY(-3px);
+}
+
+.mt-40 {
+  margin-top: 40rpx;
+}
+
+/*底部按钮 */
+.bottom-btn {
+  min-height: 120rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  padding: 0 30rpx;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.06);
+}
+
+.toActiveCard {
+  width: 684rpx;
+  height: 84rpx;
+  background-image: linear-gradient(90deg, #ff7361 0%, #f63e0b 100%);
+  border-radius: 42rpx;
+  line-height: 84rpx;
+  font-size: 32rpx;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 18rpx;
+}
+
+.disabled {
+  color: #a3a2a2;
+  background-color: #e3e1e2;
+  background-image: none;
+}
