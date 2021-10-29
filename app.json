@@ -6,7 +6,8 @@
     "pages/my/my",
     "pages/menuFixed/menuFixed",
     "pages/qrcode/qrcode",
-    "pages/updateCheck/updateCheck"
+    "pages/updateCheck/updateCheck",
+    "pages/loginQuietly/loginQuietly"
   ],
   "window": {
     "backgroundTextStyle": "light",

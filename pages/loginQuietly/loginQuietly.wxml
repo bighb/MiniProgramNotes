@@ -1,0 +1,7 @@
+<view class="title">小程序静默登录</view>
+<view class="subhead">问题1：并发控制</view>
+<view class="card">当时多个登录在同一时间请求发出，此时登录过期，请求失败，失败导致重新登录，多个请求同时失败就会重复登录</view>
+<view class="subhead">问题2：时序控制</view>
+<view class="card">当时多个登录在同一时间请求发出，此时登录过期，请求失败，如何保证在用户无感知的情况下重新登录，并且再以新token去请求之前请求失败的接口</view>
+<view class="subhead">解决方案：Promise</view>
+<view class="card">异步转同步，当一个请求失败增加一个中间状态，更新当前重新请求的状态，具体操作参考/common目录文件</view>
