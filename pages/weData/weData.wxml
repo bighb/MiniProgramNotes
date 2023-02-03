@@ -1,0 +1,4 @@
+<view>
+    <button bindtap="tapName">点击</button>
+    <view>{{num}}</view>
+</view>

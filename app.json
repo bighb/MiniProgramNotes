@@ -10,7 +10,8 @@
     "pages/loginQuietly/loginQuietly",
     "pages/navbar/navbar",
     "pages/echartsLine/echartsLine",
-    "pages/bigNumber/bigNumber"
+    "pages/bigNumber/bigNumber",
+    "pages/weData/weData"
   ],
   "window": {
     "backgroundTextStyle": "light",
