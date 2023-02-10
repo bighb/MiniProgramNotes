@@ -1,44 +1,45 @@
 {
-  "pages": [
-    "pages/home/home",
-    "pages/webview/webview",
-    "pages/rollThrough/rollThrough",
-    "pages/my/my",
-    "pages/menuFixed/menuFixed",
-    "pages/qrcode/qrcode",
-    "pages/updateCheck/updateCheck",
-    "pages/loginQuietly/loginQuietly",
-    "pages/navbar/navbar",
-    "pages/echartsLine/echartsLine",
-    "pages/bigNumber/bigNumber",
-    "pages/weData/weData"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "小程序笔记本",
-    "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "color": "#999",
-    "selectedColor": "#222",
-    "backgroundColor": "#f8f9fb",
-    "borderStyle": "white",
-    "list": [
-      {
-        "pagePath": "pages/home/home",
-        "text": "首页",
-        "iconPath": "assets/todos.png",
-        "selectedIconPath": "assets/todos-active.png"
-      },
-      {
-        "pagePath": "pages/my/my",
-        "text": "我的",
-        "iconPath": "assets/todos.png",
-        "selectedIconPath": "assets/todos-active.png"
-      }
-    ]
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/home/home",
+        "pages/webview/webview",
+        "pages/rollThrough/rollThrough",
+        "pages/my/my",
+        "pages/menuFixed/menuFixed",
+        "pages/qrcode/qrcode",
+        "pages/updateCheck/updateCheck",
+        "pages/loginQuietly/loginQuietly",
+        "pages/navbar/navbar",
+        "pages/echartsLine/echartsLine",
+        "pages/bigNumber/bigNumber",
+        "pages/weData/weData",
+        "pages/iconfont/iconfont"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "小程序笔记本",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#222",
+        "backgroundColor": "#f8f9fb",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "assets/todos.png",
+                "selectedIconPath": "assets/todos-active.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "assets/todos.png",
+                "selectedIconPath": "assets/todos-active.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }

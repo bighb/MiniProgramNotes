@@ -1,0 +1,4 @@
+/* pages/iconfont/iconfont.wxss */
+.icon-pingguo {
+  color: red;
+}

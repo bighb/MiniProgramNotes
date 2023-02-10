@@ -11,3 +11,4 @@
 <van-cell is-link title="生僻字中文校验规则" url="/pages/topContactsForm/topContactsForm" />
 <van-cell is-link title="前端js数字精度计算" url="/pages/bigNumber/bigNumber" />
 <van-cell is-link title="测试we分析统计" url="/pages/weData/weData" />
+<van-cell is-link title="引入iconfont" url="/pages/iconfont/iconfont" />
