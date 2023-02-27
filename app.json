@@ -12,7 +12,9 @@
         "pages/echartsLine/echartsLine",
         "pages/bigNumber/bigNumber",
         "pages/weData/weData",
-        "pages/iconfont/iconfont"
+        "pages/iconfont/iconfont",
+        "pages/mockData/mockData",
+        "pages/hyhb/hyhb"
     ],
     "window": {
         "backgroundTextStyle": "light",

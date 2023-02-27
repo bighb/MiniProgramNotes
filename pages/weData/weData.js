@@ -18,9 +18,9 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
-    wx.reportEvent("page_view1", {
-      article_id: "ddd",
+  onLoad({ name }) {
+    wx.reportEvent("hb_111", {
+      article_id: name,
     });
   },
 

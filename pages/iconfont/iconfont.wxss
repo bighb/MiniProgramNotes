@@ -1,4 +1,4 @@
 /* pages/iconfont/iconfont.wxss */
-.icon-pingguo {
+.icon-dingdan {
   color: red;
 }
